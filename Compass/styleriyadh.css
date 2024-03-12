@@ -1,0 +1,171 @@
+/**------------------------------------------------The style of RIYADH page---------------------------------------------------------*/
+
+.header2{
+    min-height: 100vh;
+    width:100% ;
+    background-image: linear-gradient(rgba(156, 144, 144, 0.3), rgba(0, 0, 0, 0.2)),url(image/riyadhbignew.jpeg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+  
+  }
+  .header2{
+    /*min-height: 100vh;*/
+    width:100% ;
+  
+  }
+  
+  .top_header2{
+    width: 100%;
+    height: 12vh;
+    background-color: 0;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+  }
+    
+  
+    .navbar-logo2 img{
+      width: 70px;
+      border-radius:20px;
+      margin: 50px;
+  }
+    /* The space between bar menu name (home,..,..)*/
+    nav .navbar2{
+      width: 65%;
+      display: flex;
+      justify-content: space-between;
+    
+    }
+    
+  
+    nav .navbar2 a {
+      text-decoration: none;
+      color: #173A52;
+      font-weight: bold;
+      margin-bottom:2px;
+      position: relative;
+    }
+    
+    nav .navbar2 a:hover {
+      color: #e7e4d1 ;
+    }
+    
+    /*This code for the line under text of header(home,..)*/
+    nav .navbar2 a::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0%;
+      height: 2px;
+      background-color: #d2856c;
+      transition: all 0.3s linear;
+    }
+    
+    nav .navbar2 a:hover::before {
+      width: 100%;
+    }
+  
+  
+  
+  
+   .card-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  
+  .card {
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .card img {
+    max-width: 100%;
+  }
+  
+  .card h2 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #97493f;
+    margin-bottom: 1.5rem;
+  }
+  
+  .card p {
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+    line-height: 1.7;
+    color: #3d3d3d;
+    margin-bottom: 2.5rem;
+  }
+  
+  .card-btn{
+    display: block;
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 2rem;
+    text-align: center;
+    background-color:#d2856c;;
+    color: black;
+    border-radius: 0.4rem;
+    transition: 0.2s;
+    outline: none;
+    cursor: pointer;
+  }
+  
+  .button{
+    display: inline-block;
+    text-decoration: none;
+    width: 70%;
+    background-color:#d2856c;;
+    color: black;
+    padding: 12px 34px;
+    border-radius: 4px;
+    outline: none;
+    cursor: pointer;
+  }
+  
+  
+  
+  .button:hover {
+    background-color: black;
+    color: #fff;
+    transition: all 0.3s linear;
+  }
+  
+  .About_Riyadh{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+  }
+  .About_Riyadh h1{
+    color: #97493f;
+    font-family: Untitled Sans;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: .3em;
+    line-height: 14px;
+    text-transform: uppercase;
+  
+  }
+  
+  .About_Riyadh h2{
+    font-family: GT Super Text Book;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    padding:10px;
+  }

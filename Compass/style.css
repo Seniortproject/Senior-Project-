@@ -1,0 +1,460 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Baloo 2', cursive;
+}
+
+.header1{
+   min-height: 100vh;
+   width:100% ;
+   background-image: linear-gradient(rgba(156, 144, 144, 0.3), rgba(0, 0, 0, 0.2)),url(image/frontpage.webp);
+   background-position: center;
+   background-size: cover;
+   position: relative;
+
+}
+
+
+.top_header{
+  width: 100%;
+  height: 12vh;
+  background-color: 0;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+}
+  
+  .top_header .navbar-logo {
+    width: 20%;
+    text-align: center;
+    font-size: 18px;
+    text-shadow: 3px 4px 2px black;
+  }
+  /* The space between bar menu name (home,..,..)*/
+  nav .navbar{
+    width: 65%;
+    display: flex;
+    justify-content: space-between;
+  
+  }
+  
+  /*This code for text style*/
+  nav .navbar a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    margin-bottom: 2px;
+    position: relative;
+  }
+  
+  nav .navbar a:hover {
+    color:#173A52 ;
+  }
+  
+  /*This code for the line under text of header(home,..)*/
+  nav .navbar a::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: #d2856c;
+    transition: all 0.3s linear;
+  }
+  
+  nav .navbar a:hover::before {
+    width: 100%;
+  }
+  
+  /** box text the one in front first page*/
+  .text-box{
+    width: 90%;
+    color: #fff;
+    position:absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+  }
+  .text-box h1{
+    font-size: 33px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 1px #000;
+  }
+
+  .text-box h2 {
+    margin: 14px 0px 18px 0;
+    font-size: 45px;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 2px #000;
+  }
+  /**moving text*/
+.nameslideshow:after {
+  color: #d2856c;
+  animation: changename 7s infinite linear;
+  content: '';
+}
+
+@keyframes changename{
+  0% { content: "RIYADH"}
+  25% { content: "JEDDAH"}
+  50% { content: "ALULA"}
+ 
+}
+
+.first_button{
+  display: inline-block;
+  text-decoration: none;
+  background-color:#d2856c;;
+  color: black;
+  padding: 12px 34px;
+  border-radius: 4px;
+  outline: none;
+  cursor: pointer;
+}
+
+
+
+.first_button:hover {
+  background-color: black;
+  color: #fff;
+  transition: all 0.3s linear;
+}
+
+/** Second section of page**/
+.Explore_website{
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+}
+.Explore_website h1{
+  color: #97493f;
+  font-family: Untitled Sans;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: .3em;
+  line-height: 14px;
+  text-transform: uppercase;
+
+}
+
+.Explore_website h2{
+  font-family: GT Super Text Book;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  padding: 10px;
+}
+/*The box buttoms of (Workshops,..,..)*/
+.row{
+  display: flex;
+  margin-top:5%;
+  justify-content:space-between;
+}
+.explore-colbox{
+  flex-basis: 45%;
+  /*background:#fff3f3;*/
+  border: 1px solid #97493f;
+  color: #97493f;
+  font-family: GT Super Text Book;
+  border-radius: 3px;
+  margin-bottom: 10%;
+  padding: 20px 30px;
+  box-sizing: border-box;
+
+}
+.explore-colbox:hover{
+  background: #97493f;
+  color: white;
+}
+/** Third section of homepage*/
+.destinations{
+  background-color: #242323;
+}
+.destinations h1{
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 50px;
+  color: #e7e4d1;
+  font-size: 40px;
+  margin-bottom: 10px;
+
+}
+/**Pictuer style and size*/
+
+.picture {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+  grid-gap: 30px;
+  margin-bottom: 30px;
+}
+
+.picturesize imp{
+  width: 100%;
+  border-radius: 30px;
+
+}
+.picture h2{
+  align-items: center;
+  color: #e7e4d1;
+  margin-bottom: 10px;
+  letter-spacing: .10em;
+  text-transform: uppercase;
+  display: flex; 
+  justify-content: center;
+  padding: 40px;
+  font-size: 50px;
+  line-height: 100px;
+  
+}
+
+.picture  a{
+  display: inline-block;
+  text-decoration: none;
+  color: #e7e4d1;
+  outline: none;
+  cursor: pointer;
+}
+
+
+.picture a:hover {
+  background-color: black;
+  color: #fff;
+  transition: all 0.3s linear;
+}
+
+/* Footer style*/
+
+
+.navbar-logo img {
+  width: 70px;
+  border-radius: 20%;
+ 
+}
+
+
+/*search bar*/
+.search-box {
+  float: right;
+  color: white;
+  
+}
+
+  
+.search-box input[type=text] {
+  color: rgb(255, 255, 255);
+  position:relative; left: 2px; top:-15px;
+  align-items: right;
+  height: 26px;
+  font-size: 16px;
+  width: 90px;
+  margin-top: 14px;
+  margin-left: 10px;
+  border-radius: 20px;
+  border: none;
+  background-color: transparent;
+  
+}
+
+@media screen and (max-width: 650px) {
+  .navbar a:not(:first-child) {
+      
+      color: white;
+  }
+
+  .navbar a.icon {
+      display: block;
+      float: right;
+      color: white;
+  }
+
+  .search-box {
+      
+      color: white;
+  }
+}
+
+::placeholder {
+  color:#fff;
+  
+}
+
+/**------------------------------------------------The style of Alula page---------------------------------------------------------*/
+
+.header2{
+  min-height: 100vh;
+  width:100% ;
+  background-image: linear-gradient(rgba(156, 144, 144, 0.3), rgba(0, 0, 0, 0.2)),url(image/backgroundalula.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+
+}
+.header2{
+  /*min-height: 100vh;*/
+  width:100% ;
+
+}
+
+.top_header2{
+  width: 100%;
+  height: 12vh;
+  background-color: 0;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+}
+  
+
+  .navbar-logo2 img{
+    width: 70px;
+    border-radius:20px;
+    margin: 50px;
+}
+  /* The space between bar menu name (home,..,..)*/
+  nav .navbar2{
+    width: 65%;
+    display: flex;
+    justify-content: space-between;
+  
+  }
+  
+
+  nav .navbar2 a {
+    text-decoration: none;
+    color: #173A52;
+    font-weight: bold;
+    margin-bottom:2px;
+    position: relative;
+  }
+  
+  nav .navbar2 a:hover {
+    color: #e7e4d1 ;
+  }
+  
+  /*This code for the line under text of header(home,..)*/
+  nav .navbar2 a::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: #d2856c;
+    transition: all 0.3s linear;
+  }
+  
+  nav .navbar2 a:hover::before {
+    width: 100%;
+  }
+
+
+
+
+ .card-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.card {
+  border: 1px solid #ccc;
+  padding: 20px;
+  text-align: center;
+}
+
+.card img {
+  max-width: 100%;
+}
+
+.card h2 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #97493f;
+  margin-bottom: 1.5rem;
+}
+
+.card p {
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+  line-height: 1.7;
+  color: #3d3d3d;
+  margin-bottom: 2.5rem;
+}
+
+.card-btn{
+  display: block;
+  width: 100%;
+  padding: 1.5rem;
+  font-size: 2rem;
+  text-align: center;
+  background-color:#d2856c;;
+  color: black;
+  border-radius: 0.4rem;
+  transition: 0.2s;
+  outline: none;
+  cursor: pointer;
+}
+
+.button{
+  display: inline-block;
+  text-decoration: none;
+  width: 70%;
+  background-color:#d2856c;;
+  color: black;
+  padding: 12px 34px;
+  border-radius: 4px;
+  outline: none;
+  cursor: pointer;
+}
+
+
+
+.button:hover {
+  background-color: black;
+  color: #fff;
+  transition: all 0.3s linear;
+}
+
+.About_Alula{
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+}
+.About_Alula h1{
+  color: #97493f;
+  font-family: Untitled Sans;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: .3em;
+  line-height: 14px;
+  text-transform: uppercase;
+
+}
+
+.About_Alula h2{
+  font-family: GT Super Text Book;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  padding:10px;
+}
+
